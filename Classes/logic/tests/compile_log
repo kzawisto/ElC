@@ -1,0 +1,148 @@
+../Point.cpp: In instantiation of ‘logic::PointD<T, N> logic::PointD<T, N>::rotateZAround(T, const logic::PointD<T, N>&) [with T = double; unsigned int N = 2u]’:
+../Point.cpp:136:16:   required from here
+../Point.cpp:125:27: error: no match for ‘operator-’ (operand types are ‘logic::PointD<double>’ and ‘const logic::PointD<double>’)
+     PointD<T,N> p= ( *this-center);
+                           ^
+../Point.cpp:125:27: note: candidates are:
+../Point.cpp:39:13: note: logic::Point<T, N> logic::Point<T, N>::operator-(logic::Point<T, N>&) const [with T = double; unsigned int N = 2u]
+ Point<T, N> Point <T, N>::operator- (Point<T,N> & second) const
+             ^
+../Point.cpp:39:13: note:   no known conversion for argument 1 from ‘const logic::PointD<double>’ to ‘logic::Point<double>&’
+In file included from /usr/include/c++/4.9/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9/algorithm:61,
+                 from /usr/include/c++/4.9/valarray:38,
+                 from ../Point.h:4,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/bits/stl_iterator.h:328:5: note: template<class _Iterator> typename std::reverse_iterator<_Iterator>::difference_type std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator-(const reverse_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.9/bits/stl_iterator.h:328:5: note:   template argument deduction/substitution failed:
+../Point.cpp:125:27: note:   ‘logic::PointD<double>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     PointD<T,N> p= ( *this-center);
+                           ^
+In file included from /usr/include/c++/4.9/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9/algorithm:61,
+                 from /usr/include/c++/4.9/valarray:38,
+                 from ../Point.h:4,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/bits/stl_iterator.h:380:5: note: template<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator-(const reverse_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.9/bits/stl_iterator.h:380:5: note:   template argument deduction/substitution failed:
+../Point.cpp:125:27: note:   ‘logic::PointD<double>’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+     PointD<T,N> p= ( *this-center);
+                           ^
+In file included from /usr/include/c++/4.9/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9/algorithm:61,
+                 from /usr/include/c++/4.9/valarray:38,
+                 from ../Point.h:4,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/bits/stl_iterator.h:1121:5: note: template<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_Iterator>&, const std::move_iterator<_IteratorR>&)
+     operator-(const move_iterator<_IteratorL>& __x,
+     ^
+/usr/include/c++/4.9/bits/stl_iterator.h:1121:5: note:   template argument deduction/substitution failed:
+../Point.cpp:125:27: note:   ‘logic::PointD<double>’ is not derived from ‘const std::move_iterator<_Iterator>’
+     PointD<T,N> p= ( *this-center);
+                           ^
+In file included from /usr/include/c++/4.9/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/4.9/algorithm:61,
+                 from /usr/include/c++/4.9/valarray:38,
+                 from ../Point.h:4,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/bits/stl_iterator.h:1128:5: note: template<class _Iterator> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_Iterator>&, const std::move_iterator<_Iterator>&)
+     operator-(const move_iterator<_Iterator>& __x,
+     ^
+/usr/include/c++/4.9/bits/stl_iterator.h:1128:5: note:   template argument deduction/substitution failed:
+../Point.cpp:125:27: note:   ‘logic::PointD<double>’ is not derived from ‘const std::move_iterator<_Iterator>’
+     PointD<T,N> p= ( *this-center);
+                           ^
+In file included from /usr/include/c++/4.9/vector:65:0,
+                 from /usr/include/c++/4.9/bits/random.h:34,
+                 from /usr/include/c++/4.9/random:49,
+                 from /usr/include/c++/4.9/bits/stl_algo.h:66,
+                 from /usr/include/c++/4.9/algorithm:62,
+                 from /usr/include/c++/4.9/valarray:38,
+                 from ../Point.h:4,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/bits/stl_bvector.h:208:3: note: std::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)
+   operator-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+   ^
+/usr/include/c++/4.9/bits/stl_bvector.h:208:3: note:   no known conversion for argument 1 from ‘logic::PointD<double>’ to ‘const std::_Bit_iterator_base&’
+In file included from /usr/include/c++/4.9/valarray:587:0,
+                 from ../Point.h:4,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/bits/valarray_after.h:403:5: note: template<class _Dom1, class _Dom2> std::_Expr<std::_BinClos<std::__minus, std::_Expr, std::_Expr, _Dom1, _Dom2>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::_Expr<_Dom2, typename _Dom2::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(-, __minus)
+     ^
+/usr/include/c++/4.9/bits/valarray_after.h:403:5: note:   template argument deduction/substitution failed:
+../Point.cpp:125:27: note:   ‘logic::PointD<double>’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+     PointD<T,N> p= ( *this-center);
+                           ^
+In file included from /usr/include/c++/4.9/valarray:587:0,
+                 from ../Point.h:4,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/bits/valarray_after.h:403:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__minus, std::_Expr, std::_Constant, _Dom, typename _Dom::value_type>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const typename _Dom::value_type&)
+     _DEFINE_EXPR_BINARY_OPERATOR(-, __minus)
+     ^
+/usr/include/c++/4.9/bits/valarray_after.h:403:5: note:   template argument deduction/substitution failed:
+../Point.cpp:125:27: note:   ‘logic::PointD<double>’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+     PointD<T,N> p= ( *this-center);
+                           ^
+In file included from /usr/include/c++/4.9/valarray:587:0,
+                 from ../Point.h:4,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/bits/valarray_after.h:403:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__minus, std::_Constant, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const typename _Dom::value_type&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(-, __minus)
+     ^
+/usr/include/c++/4.9/bits/valarray_after.h:403:5: note:   template argument deduction/substitution failed:
+../Point.cpp:125:27: note:   ‘const logic::PointD<double>’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+     PointD<T,N> p= ( *this-center);
+                           ^
+In file included from /usr/include/c++/4.9/valarray:587:0,
+                 from ../Point.h:4,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/bits/valarray_after.h:403:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__minus, std::_Expr, std::_ValArray, _Dom, typename _Dom::value_type>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const std::_Expr<_Dom1, typename _Dom1::value_type>&, const std::valarray<typename _Dom::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(-, __minus)
+     ^
+/usr/include/c++/4.9/bits/valarray_after.h:403:5: note:   template argument deduction/substitution failed:
+../Point.cpp:125:27: note:   ‘logic::PointD<double>’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+     PointD<T,N> p= ( *this-center);
+                           ^
+In file included from /usr/include/c++/4.9/valarray:587:0,
+                 from ../Point.h:4,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/bits/valarray_after.h:403:5: note: template<class _Dom> std::_Expr<std::_BinClos<std::__minus, std::_ValArray, std::_Expr, typename _Dom::value_type, _Dom>, typename std::__fun<std::__minus, typename _Dom1::value_type>::result_type> std::operator-(const std::valarray<typename _Dom::value_type>&, const std::_Expr<_Dom1, typename _Dom1::value_type>&)
+     _DEFINE_EXPR_BINARY_OPERATOR(-, __minus)
+     ^
+/usr/include/c++/4.9/bits/valarray_after.h:403:5: note:   template argument deduction/substitution failed:
+../Point.cpp:125:27: note:   ‘const logic::PointD<double>’ is not derived from ‘const std::_Expr<_Dom1, typename _Dom1::value_type>’
+     PointD<T,N> p= ( *this-center);
+                           ^
+In file included from ../Point.h:4:0,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/valarray:1168:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__minus, std::_ValArray, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__minus, _Tp>::result_type> std::operator-(const std::valarray<_Tp>&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(-, __minus)
+ ^
+/usr/include/c++/4.9/valarray:1168:1: note:   template argument deduction/substitution failed:
+../Point.cpp:125:27: note:   ‘logic::PointD<double>’ is not derived from ‘const std::valarray<_Tp>’
+     PointD<T,N> p= ( *this-center);
+                           ^
+In file included from ../Point.h:4:0,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/valarray:1168:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__minus, std::_ValArray, std::_Constant, _Tp, _Tp>, typename std::__fun<std::__minus, _Tp>::result_type> std::operator-(const std::valarray<_Tp>&, const _Tp&)
+ _DEFINE_BINARY_OPERATOR(-, __minus)
+ ^
+/usr/include/c++/4.9/valarray:1168:1: note:   template argument deduction/substitution failed:
+../Point.cpp:125:27: note:   ‘logic::PointD<double>’ is not derived from ‘const std::valarray<_Tp>’
+     PointD<T,N> p= ( *this-center);
+                           ^
+In file included from ../Point.h:4:0,
+                 from ../Point.cpp:1:
+/usr/include/c++/4.9/valarray:1168:1: note: template<class _Tp> std::_Expr<std::_BinClos<std::__minus, std::_Constant, std::_ValArray, _Tp, _Tp>, typename std::__fun<std::__minus, _Tp>::result_type> std::operator-(const _Tp&, const std::valarray<_Tp>&)
+ _DEFINE_BINARY_OPERATOR(-, __minus)
+ ^
+/usr/include/c++/4.9/valarray:1168:1: note:   template argument deduction/substitution failed:
+../Point.cpp:125:27: note:   ‘const logic::PointD<double>’ is not derived from ‘const std::valarray<_Tp>’
+     PointD<T,N> p= ( *this-center);
+                           ^
+make: *** [Point.o] Error 1
